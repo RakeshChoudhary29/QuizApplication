@@ -1,0 +1,71 @@
+/* App.css */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; /* Modern sans-serif font */
+}
+
+.buttons-container {
+  margin-top: 20px;
+}
+
+.quiz-options {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #f9f9f9;
+}
+
+.instruction {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif; /* Consistent font */
+}
+
+.quiz-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+
+.quiz-buttons button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif; /* Consistent font */
+}
+
+h1 {
+  margin-bottom: 50px;
+  color: #333;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif; /* Consistent font */
+}
+
+.quiz-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.quiz-buttons button:focus {
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .quiz-buttons {
+    grid-template-columns: 1fr;
+  }
+}
